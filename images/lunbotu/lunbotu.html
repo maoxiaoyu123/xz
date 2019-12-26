@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    window.onload = function(){
+      //创建获取的时间图片数组
+      var aImg = document.getElementsByTagName("img");
+      //console.log(aImg);
+      //创建时间差函数
+      for(var i=0;i<aImg.length;i++){
+          aImg[i].src = "images/" + str.charAt(i) + ".png";
+          //console.log(aImg[i].src);
+        }
+      //时间间隔
+      setInterval(gapTime,1000); 
+      gapTime();
+    }
+    //判断时间
+    
+  </script>
+</head>
+<body>
+   <img src="img/1.jpg" alt="">
+</body>
+</html>
